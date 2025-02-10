@@ -3,18 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Записка</title> <!-- Название вкладки -->
+    <title>Записка</title>
     <style>
         body {
-            background-color: #d7c4a3; /* Цвет фона, похожий на бумагу */
-            background-image: url('https://www.toptal.com/designers/subtlepatterns/uploads/soft_wallpaper.png'); /* Текстура бумаги */
+            background-color: #d7c4a3;
+            background-image: url('https://www.toptal.com/designers/subtlepatterns/uploads/soft_wallpaper.png');
             background-size: cover;
             background-attachment: fixed;
-            color: #3e322a; /* Цвет текста, похожий на тон чернил */
+            color: #3e322a;
             font-family: "Georgia", "Times New Roman", serif;
-            font-size: 24px;
+            font-size: 22px;
             text-align: center;
-            padding: 50px;
+            padding: 30px;
+            max-width: 100%;
+            overflow-x: hidden; /* Убирает горизонтальную прокрутку */
         }
         .note, .footer-text {
             font-size: 18px;
@@ -23,13 +25,13 @@
             margin-bottom: 20px;
         }
         .poem {
-            font-size: 26px;
+            font-size: 22px; /* Сделал чуть меньше */
             font-weight: normal;
-            line-height: 1.8;
+            line-height: 1.6;
             text-align: center;
-            white-space: pre;
-            margin-top: 30px;
-            margin-bottom: 30px;
+            display: inline-block;
+            max-width: 100%;
+            white-space: normal; /* Теперь строки не выходят за пределы экрана */
         }
         .link {
             display: block;
@@ -40,7 +42,7 @@
             margin-top: 40px;
         }
         .link:hover {
-            color: #6d5c4a; /* Темнее при наведении */
+            color: #6d5c4a;
         }
     </style>
 </head>
@@ -51,15 +53,14 @@
         I don’t like how it sounds in English.
     </p>
     
-    <p class="poem">
-        Мне хочется на кровать.  
-        Мне хочется  
-        &nbsp;&nbsp;&nbsp;&nbsp;Темноты.  
-        
-        Я очень люблю спать,  
-        &nbsp;&nbsp;&nbsp;&nbsp;Ведь мне  
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Снишься ты.  
-    </p>
+    <div class="poem">
+        Мне хочется на кровать.<br>
+        Мне хочется<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;Темноты.<br><br>
+        Я очень люблю спать,<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;Ведь мне<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Снишься ты.
+    </div>
 
     <p class="footer-text">
         I thought for a long time and didn’t know which poem to choose, but I ended up with the one you’ve already seen and know.<br>
@@ -67,7 +68,6 @@
         so... love you, Sunshine. Loved you from day one to this day.
     </p>
 
-    <!-- Ссылка теперь не двигает текст -->
     <a class="link" href="https://music.youtube.com/watch?v=sPw-_Of_LgQ&si=fbJGtqVLYYgrMcwy" target="_blank">
         Не забывай как звучит любовь
     </a>
