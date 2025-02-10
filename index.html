@@ -15,7 +15,7 @@
             text-align: center;
             padding: 30px;
             max-width: 100%;
-            overflow-x: hidden; /* Убираем горизонтальный скролл */
+            overflow-x: hidden;
         }
         .note, .footer-text {
             font-size: 18px;
@@ -25,14 +25,17 @@
             line-height: 1.6;
         }
         .poem {
-            font-size: 20px; /* Чуть уменьшил, чтобы гармонировал с остальным текстом */
+            font-size: 22px; /* Немного увеличил размер */
             font-weight: normal;
-            line-height: 1.8; /* Сделал текст воздушнее */
+            line-height: 1.5; /* Сделал строки чуть плотнее */
             text-align: center;
             display: block;
             max-width: 90%;
             margin: 20px auto;
-            white-space: pre-line; /* Позволяет корректные переносы строк */
+            white-space: pre-line;
+        }
+        .link-container {
+            margin-top: 40px;
         }
         .link {
             display: block;
@@ -40,9 +43,12 @@
             font-weight: 500;
             color: #4a3f35;
             text-decoration: none;
-            margin-top: 40px;
         }
         .link:hover {
+            color: #6d5c4a;
+        }
+        .hint {
+            font-size: 14px;
             color: #6d5c4a;
         }
     </style>
@@ -69,9 +75,11 @@
         so... love you, Sunshine. Loved you from day one to this day.
     </p>
 
-    <a class="link" href="https://music.youtube.com/watch?v=sPw-_Of_LgQ&si=fbJGtqVLYYgrMcwy" target="_blank">
-        Не забывай как звучит любовь
-       (можешь нажать на эту фразочку)
-    </a>
+    <div class="link-container">
+        <p>→ <a class="link" href="https://music.youtube.com/watch?v=sPw-_Of_LgQ&si=fbJGtqVLYYgrMcwy" target="_blank">
+        Don't forget how love sounds
+        </a> ←</p>
+        <p class="hint">{Click this one}</p>
+    </div>
 </body>
 </html>
