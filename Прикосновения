@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дорогому Солнцу</title> <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Lora', serif; /* Используем шрифт с засечками */
+            line-height: 1.8; /* Увеличенный интервал для лучшей читаемости */
+            background-color: #dccfb9; /* Фон всего окна - более насыщенный старый пергамент */
+            color: #3b2a1f; /* Темно-коричневый, почти черный цвет текста для имитации чернил */
+            margin: 0;
+            padding: 20px; /* Отступы от края окна */
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh; /* Минимальная высота для центрирования по вертикали */
+        }
+        .page-container {
+            background-color: #f8f0dc; /* Внутренний фон страницы книги - светлый, пожелтевший */
+            padding: 40px 30px; /* Внутренние отступы страницы */
+            max-width: 600px; /* Максимальная ширина "страницы" */
+            width: 100%;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Более выраженная тень для эффекта страницы */
+            border-radius: 5px; /* Слегка скругленные углы */
+            box-sizing: border-box; /* Учитываем padding в ширине */
+        }
+        .section {
+            margin-bottom: 30px; /* Отступ между блоками */
+        }
+        .centered-text {
+            text-align: center;
+            white-space: pre-line; /* Сохраняет переносы строк и пробелы */
+            margin-bottom: 20px;
+        }
+        .left-indented-text {
+            text-align: left;
+            margin-left: 10%; /* Отступ слева */
+            margin-right: 10%; /* Отступ справа для симметрии */
+            white-space: pre-line; /* Сохраняет переносы строк и пробелы */
+            margin-bottom: 20px;
+        }
+        .music-link-text {
+            display: block;
+            text-align: center;
+            margin: 30px auto;
+            font-size: 1.2em; /* Увеличим размер текста ссылки */
+            font-weight: bold;
+            color: #000000; /* Цвет ссылки - черный */
+            text-decoration: none; /* Убираем подчеркивание по умолчанию */
+            transition: color 0.2s ease, text-decoration 0.2s ease; /* Добавляем переход для подчеркивания */
+        }
+        .music-link-text:hover {
+            color: #5a4030; /* Изменение цвета при наведении (можно выбрать любой другой) */
+            text-decoration: underline; /* Появление подчеркивания при наведении */
+        }
+        /* Медиа-запросы для мобильных устройств */
+        @media (max-width: 768px) {
+            .page-container {
+                padding: 20px 15px;
+                margin: 10px;
+            }
+            .left-indented-text {
+                margin-left: 5%;
+                margin-right: 5%;
+            }
+            body {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="page-container">
+        <div class="section centered-text">
+            <p>
+Мне не выразить словами и в том объеме, насколько сильно и преданно я тебя полюбил за столь короткий срок. Сколько я пережил боли уже с тобой, сколько ночей не спал, сколько болело мое сердце. Но все это меркнет на фоне того насколько ценна ты мне стала, насколько искренне я полюбил тебя и доверился тебе.
+
+Я не знаю, что это, почему мне это пришло в голову и насколько это все безнадёжно. Ты будешь это читать, слушать, смотреть уже тогда, когда мы разойдемся. Я не знаю как пройдет день, что будет до этого момента, но даже так, я пишу заранее, что люблю тебя всем сердцем. Ты можешь не верить словам, поступкам, но это уже не важно, ведь ты все так же не моя. Я уверен, что ничего не изменится и не поменяется. Мне больно и от того, что так получается, и от того, что я понимаю, что заслуживаю это.
+            </p>
+        </div>
+
+        <div class="section left-indented-text">
+            <p>
+А давай
+я просто
+по-родному так
+крепко
+всю тебя
+уставшую
+обниму.
+
+Ты повиснешь на мне.
+Я прижму
+и пойму.
+
+Не буду расспрашивать,
+требовать -
+рядом побуду,
+пригрею
+в покое
+и сохраню.
+
+Закрой глаза
+и немного поспи.
+Я одеялом укрою
+и за тобою
+присмотрю.
+            </p>
+        </div>
+
+        <div class="section">
+            <a href="Https://music.youtube.com/watch?v=yUEwKkw3ACw&si=HgOVIDIG3pRl1ZFj" target="_blank" rel="noopener noreferrer" class="music-link-text">
+                >>нажми на меня<<
+            </a>
+        </div>
+
+        <div class="section centered-text">
+            <p>
+Позвони, если все достали.
+Помни, что
+Ты не одна.
+Если в тебе океан печали,
+Я выпью
+Его до дна.
+            </p>
+        </div>
+
+        <div class="section">
+            <a href="Https://youtu.be/MKfsT8RGedQ?si=Q_BdigKKvKm_5Eqj" target="_blank" rel="noopener noreferrer" class="music-link-text">
+                >>нажми на меня<<
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
